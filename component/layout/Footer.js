@@ -12,7 +12,7 @@ const Footer = () => {
             </a>
         </Box>
 
-        <Heading m="2rem" fontSize="1.4rem" fontFamily="times new roman,times,serif" textAlign="center">
+        <Heading fontWeight="400" m="2rem" fontSize="1.4rem" fontFamily="times new roman,times,serif" textAlign="center">
             It was only fantasy...
         </Heading>
     </Flex>

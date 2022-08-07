@@ -5,11 +5,10 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher";
 const Header = () => {
 
 
-
     return <Flex p="2rem" w="100%" direction="column">
         <Flex w="100%" justifyContent="center">
-            <Heading fontSize="2rem" fontFamily="times new roman,times,serif" ml="9rem" flexBasis="100%" textAlign="center">
-                It was only fantasy...
+            <Heading fontWeight="400" fontSize="2rem" fontFamily="times new roman,times,serif" ml="9rem" flexBasis="100%" textAlign="center">
+                it was only fantasy...
             </Heading>
             <Flex cursor="pointer " alignSelf="end" alignItems="center">
                 <ColorModeSwitcher />
