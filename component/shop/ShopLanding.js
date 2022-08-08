@@ -4,7 +4,7 @@ const ShopLanding = () => {
 
 
 
-    return <ShopItems /> 
+    return <ShopItems />
 }
 
 
