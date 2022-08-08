@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Icon, ListItem, UnorderedList } from "@chakra-ui/react";
 import Link from "next/link"
-import { BsCartFill } from "react-icons/bs"
+import CartModal from "../ui/CartModal";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 const Header = () => {
 
@@ -12,10 +12,7 @@ const Header = () => {
             </Heading>
             <Flex cursor="pointer " alignSelf="end" alignItems="center">
                 <ColorModeSwitcher />
-                <Flex ml="2rem">
-                    <Icon mr="10px" w={6} h={6} as={BsCartFill} />
-                    <span>0</span>
-                </Flex>
+                <CartModal />
 
 
             </Flex>

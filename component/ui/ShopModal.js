@@ -47,23 +47,25 @@ const ShopModal = ({ itemId }) => {
             </Button>
             <Modal w="100%" finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
-                <ModalContent w={{ md: "500", base: "500px" }}>
+                <ModalContent w={{  base: "500px" }}>
                     <Flex>
-                        <Box p="3rem">
+                        <Box p="1rem">
                             <Image placeholder="blur" blurDataURL="/resources/gallery/gal-11.webp"
-                                src="/resources/gallery/gal-11.webp" width={300} height={300} />
+                                src="/resources/gallery/gal-11.webp" width={400} height={500} />
 
                         </Box>
-                        <Flex p="1rem" direction="column">
+                        <Flex flexBasis="50%" p="1rem" direction="column">
                             <Text fontSize="1.6rem" font alignSelf="start">{itemDetails.title}</Text>
                             <Text mt="5px" fontSize="1.2rem" alignSelf="start">${itemDetails.price.toFixed(2)}</Text>
                             <ModalCloseButton />
                             <ModalBody>
                                 <Flex mt="1.4rem"  p="0" alignItems="flex-start">
-                                    <form>
+                                    <form style={{
+                                        width: '100%'
+                                    }}>
                                         <FormControl>
-                                            <FormLabel>size</FormLabel>
-                                            <Select mt="1rem">
+                                            <FormLabel>Size</FormLabel>
+                                            <Select w="80%" mt="1rem">
                                                 <option value='option1'>Small</option>
                                                 <option value='option2'>Medium</option>
                                                 <option value='option3'>Large</option>
@@ -72,8 +74,8 @@ const ShopModal = ({ itemId }) => {
                                             </Select>
                                         </FormControl>
                                         <FormControl mt="1rem">
-                                            <FormLabel>quantity</FormLabel>
-                                            <NumberInput w="30%" mt="1rem" defaultValue={1} max={5} min={1}>
+                                            <FormLabel>Quantity</FormLabel>
+                                            <NumberInput w="30%" mt=".5rem" defaultValue={1} max={5} min={1}>
                                                 <NumberInputField />
                                                 <NumberInputStepper>
                                                     <NumberIncrementStepper />
