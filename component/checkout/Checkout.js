@@ -8,7 +8,7 @@ const Checkout = () => {
     return <Box>
         <CheckoutHeader />
         <Flex mt="5rem !important" w="75%" margin="0 auto">
-            <Box flexBasis="50%" bg="brown">
+            <Box flexBasis="50%" >
                 <CheckoutDetails />
             </Box>
 

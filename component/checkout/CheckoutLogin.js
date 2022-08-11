@@ -4,10 +4,9 @@ const CheckoutLogin = () => {
 
 
 
-    return <Box>
-        <Text>Already hanve an account?
-            <Link href="/">Login</Link>
-            for a faster checkout
+    return <Box m="0 auto" bg="gray.100" p="1rem 2rem">
+        <Text>Already have an account?
+            <Link href="/"> Login </Link> for a faster checkout
         </Text>
     </Box>
 
