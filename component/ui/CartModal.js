@@ -33,6 +33,7 @@ import Link from 'next/link'
 
 
 
+
 const CartModal = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const finalRef = useRef(null)
@@ -51,7 +52,7 @@ const CartModal = () => {
                         <ModalCloseButton />
                         <ModalHeader fontSize="1.7rem" textAlign="center">Cart</ModalHeader>
                         <ModalBody>
-                            <Flex  direction="column" mt="1.4rem" p="0" alignItems="flex-start">
+                            <Flex direction="column" mt="1.4rem" p="0" alignItems="flex-start">
                                 <form style={{
                                     width: '100%'
                                 }}>
@@ -78,11 +79,13 @@ const CartModal = () => {
                                         </FormControl>
                                     </Box>
 
-                                    <Flex p=" 1rem 0" borderTop="1px solid black"  direction="column" mt="3rem">
+                                    <Flex p=" 1rem 0" borderTop="1px solid black" direction="column" mt="3rem">
                                         <Text fontSize="1.5rem">Sub total</Text>
                                         <Text fontSize="1.5rem">$300.00</Text>
                                     </Flex>
-                                    <Button colorScheme='twitter' w="100%" mt="3rem">Checkout Page</Button>
+                                    <Link href="/cart">
+                                        <Button onClick={onClose} colorScheme='twitter' w="100%" mt="3rem">Checkout Page</Button>
+                                    </Link>
 
                                 </form>
                             </Flex>

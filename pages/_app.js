@@ -25,6 +25,14 @@ function MyApp({ Component, pageProps }) {
       </ChakraProvider>
     )
   }
+
+  if (route.pathname === "/checkout") {
+    return (
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    )
+  }
   return (
     <ChakraProvider>
       <Layout>
