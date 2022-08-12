@@ -84,7 +84,7 @@ const CartModal = () => {
                                         <Text fontSize="1.5rem">$300.00</Text>
                                     </Flex>
                                     <Link href="/cart">
-                                        <Button onClick={onClose} colorScheme='twitter' w="100%" mt="3rem">Checkout Page</Button>
+                                        <Button onClick={onClose} colorScheme='twitter' w="100%" mt="3rem">View cart</Button>
                                     </Link>
 
                                 </form>

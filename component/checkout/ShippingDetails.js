@@ -9,17 +9,17 @@ import {
     Button
 } from "@chakra-ui/react";
 
-const ShippingDetails = () => {
+const ShippingDetails = ({ isBilling }) => {
 
 
 
     return <Flex direction="column">
-        <Heading fontSize="1.5rem" mb="2rem">1 Shipping details</Heading>
         <form>
-            <FormControl isRequired>
+            {isBilling ? ' ' : (<FormControl isRequired>
                 <FormLabel>Email for order confirmation</FormLabel>
                 <Input type='email' />
-            </FormControl>
+            </FormControl>)}
+
             <Flex justifyContent="space-between" mt="2rem">
                 <FormControl w="45%" isRequired>
                     <FormLabel>First name</FormLabel>
@@ -38,12 +38,21 @@ const ShippingDetails = () => {
                 <FormLabel>City</FormLabel>
                 <Input type='text' />
             </FormControl>
-            <FormControl mt="2rem" isRequired>
-                <FormLabel>Country</FormLabel>
-                <Select placeholder='Select your country'>
-                    <option value='option1'>Philippines</option>
-                </Select>
-            </FormControl>
+            <Flex justifyContent="space-between">
+                <FormControl w="45%" mt="2rem" isRequired>
+                    <FormLabel>Country</FormLabel>
+                    <Select placeholder='Select your country'>
+                        <option value='option1'>Philippines</option>
+                    </Select>
+                </FormControl>
+                <FormControl w="45%" mt="2rem" isRequired>
+                    <FormLabel>Region</FormLabel>
+                    <Select placeholder='Select your region'>
+                        <option value='option1'>NCR</option>
+                    </Select>
+                </FormControl>
+            </Flex>
+
             <Flex justifyContent="space-between" mt="2rem">
                 <FormControl w="45%" isRequired>
                     <FormLabel>Postal code</FormLabel>
