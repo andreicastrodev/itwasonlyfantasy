@@ -12,7 +12,7 @@ const Checkout = () => {
                 <CheckoutDetails />
             </Box>
 
-            <Box flexBasis="50%" bg="red">
+            <Box margin="0 auto" flexBasis="50%">
                 <CheckoutSummary />
             </Box>
         </Flex>

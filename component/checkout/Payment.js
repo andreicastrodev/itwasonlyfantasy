@@ -24,8 +24,8 @@ const Payment = () => {
         setCardNumber(val.replace(/\W/gi, '').replace(/(.{4})/g, '$1 '));
     }
     return <Box mt="2rem" >
-        <form action="">
-            <Flex bg="gray.100" p="1rem 2rem" direction="column">
+        <form >
+            <Flex bg="#f5f5f5" p="1rem 2rem" direction="column">
                 <FormControl mt="2rem" isRequired>
                     <FormLabel>Card number</FormLabel>
                     <Input type="tel" value={cardNumber} onChange={onCardChangeHandler} maxLength={20} />

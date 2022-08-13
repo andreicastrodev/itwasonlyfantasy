@@ -1,12 +1,12 @@
 import { Box, Text } from "@chakra-ui/react";
-import Link from 'next/link'
+import AuthModal from "../auth/AuthModal";
 const CheckoutLogin = () => {
 
 
 
-    return <Box m="0 auto" bg="gray.100" p="1rem 2rem">
+    return <Box m="0 auto" bg="#f5f5f5" p="1rem 2rem">
         <Text>Already have an account?
-            <Text display="inline" textDecor="underline"> <Link href="/"> Login </Link></Text> for a faster checkout.
+            <AuthModal /> for a faster checkout.
         </Text>
     </Box>
 

@@ -5,7 +5,7 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher";
 const Header = () => {
 
 
-    return <Flex p="2rem" w="100%" direction="column">
+    return <Flex zIndex="10" position="sticky" top="-0.8rem" bgColor="#fff" p="2rem" w="100%" direction="column">
         <Flex w="100%" justifyContent="center">
             <Heading fontWeight="400" fontSize="2rem" fontFamily="times new roman,times,serif" ml="9rem" flexBasis="100%" textAlign="center">
                 it was only fantasy...

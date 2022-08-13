@@ -3,7 +3,7 @@ import CheckoutLogin from "./CheckoutLogin";
 import DeliveryMethod from "./DeliveryMethod";
 import Payment from "./Payment";
 import ShippingDetails from "./ShippingDetails";
-
+import Review from "./Review";
 const CheckoutDetails = () => {
 
     return <Flex direction="column">
@@ -20,6 +20,10 @@ const CheckoutDetails = () => {
         <Box p="1rem 0rem" mt="2rem">
             <Heading fontSize="1.5rem">3 Payment</Heading>
             <Payment />
+        </Box>
+        <Box p="1rem 0rem" mt="2rem">
+            <Heading fontSize="1.5rem">3 Review and place order</Heading>
+            <Review />
         </Box>
     </Flex>
 }
